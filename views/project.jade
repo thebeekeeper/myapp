@@ -1,0 +1,10 @@
+extends layout
+
+block content
+  h1= title
+
+  h2 all past analyses
+  ul
+    each analysis, a in analyses
+      li 
+        a(href="/analysis/") #{analysis.score} : #{analysis.result}
